@@ -1,0 +1,15 @@
+citHeader("To cite the 'MAR1' package in publications use:")
+
+year <- sub(".*(2[[:digit:]]{3})-.*", "\\1", meta$Date, perl = TRUE)
+vers <- paste("R package version", meta$Version)
+
+citEntry(entry="Manual",
+         title = "MAR1:  Multivariate Autoregressive Modeling for Analysis of Community Time-Series Data",
+         author = personList(as.person("Lindsay Scheef")),
+         year = year,
+         note = vers,
+         url = "http://cran.r-project.org/web/packages/MAR1/",
+         textVersion =
+         paste("Lindsay Scheef (", year,
+               "). MAR1: Multivariate Autoregressive Modeling for Analysis of Community Time-Series Data. ",
+               vers, ".", sep="") )

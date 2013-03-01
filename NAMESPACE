@@ -1,0 +1,29 @@
+## Imports
+importFrom(bestglm,bestglm,to.binary)
+importFrom(leaps,regsubsets)
+
+## export classes
+exportClasses(
+  MAR,
+  MARsummary,
+  MARtop)
+
+## export functions
+export(
+  run.mar,
+  ss.mar1,
+  prepare.data,
+  export.MAR,
+	summary.MAR,
+  plot.MAR,
+  print.MAR,
+	plot.MARtop,
+  hist.MARtop,
+	print.MARsummary)
+
+## register S3 methods
+S3method(print, MARsummary)
+S3method(print, MAR)
+S3method(summary, MAR)
+S3method(plot, MARtop)
+S3method(hist, MARtop)
